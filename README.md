@@ -1,4 +1,4 @@
-# GCS Demo – Express × Vite × Tailwind
+# My Portfolio – Express × Vite × Tailwind
 
 A quick two-tier test app you can run entirely in Google Cloud Shell (or any Node 18+ setup).
 
