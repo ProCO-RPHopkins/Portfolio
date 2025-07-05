@@ -673,9 +673,6 @@
   .text-blue-500 {
     color: var(--color-blue-500);
   }
-  .text-blue-600 {
-    color: var(--color-blue-600);
-  }
   .text-blue-800 {
     color: var(--color-blue-800);
   }
@@ -684,9 +681,6 @@
   }
   .text-emerald-600 {
     color: var(--color-emerald-600);
-  }
-  .text-fuchsia-500 {
-    color: var(--color-fuchsia-500);
   }
   .text-gray-500 {
     color: var(--color-gray-500);
