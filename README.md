@@ -38,7 +38,7 @@ npm run dev        # serves the UI at http://localhost:5173
 | 4000 | Express API    | Web Preview ▸ **Change port…** ▸ 4000 |
 | 5173 | Vite front-end | Web Preview ▸ **Change port…** ▸ 5173 |
 
-## One-liner (optional)
+## One-liner (optional) - Run check
 ### If you have the concurrently package installed, you can launch everything at once:
 npm i -g concurrently
 concurrently -c green,cyan,magenta \
