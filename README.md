@@ -34,4 +34,5 @@ npm
 This site is automatically deployed to GitHub Pages using GitHub Actions:
 * `.github/workflows/deploy.yml` handles builds & publishing.
 * `.nojekyll` ensures Pages serves files correctly without Jekyll interference.
+
 Any push to `main` triggers a new deployment.
