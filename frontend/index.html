@@ -54,7 +54,7 @@
       <div class="w-full md:w-1/2">
         <div class="backdrop-blur-lg bg-white/80 dark:bg-white/10 ring-1 ring-gray-300 dark:ring-white/15 shadow-2xl rounded-3xl p-8 md:p-12 transition-all duration-500 hover:shadow-teal-500/20 dark:hover:shadow-teal-500/30">
           <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4 text-teal-600 dark:text-teal-300 drop-shadow-lg">Ryan Hopkins</h1>
-          <p class="text-lg sm:text-xl font-light mb-8 text-gray-700 dark:text-white/90">AI Architect · Agentic Systems Builder · Justice‑Tech Advocate</p>
+          <p class="text-lg sm:text-xl font-light mb-8 text-gray-700 dark:text-white/90">AI Architect & Solutions Engineer · Agentic Systems Builder · Strategist & Designer</p>
           <div class="flex flex-wrap gap-3 mb-8">
             <span class="px-3 py-1 bg-amber-100 dark:bg-amber-500/20 text-amber-800 dark:text-amber-200 rounded-full text-sm">Context Engineer</span>
             <span class="px-3 py-1 bg-blue-100 dark:bg-blue-500/20 text-blue-800 dark:text-blue-200 rounded-full text-sm">I-O Psychology</span>
@@ -326,17 +326,21 @@
         </div>
       </div>
       
-      <!-- Architecture & Stack -->
+      <!-- Architecture -->
       <div class="grid md:grid-cols-2 gap-6 mt-12">
         <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 ring-1 ring-gray-200 dark:ring-white/10">
           <h3 class="font-semibold mb-3">Architecture (high-level)</h3>
           <ul class="list-disc pl-5 space-y-2 text-sm text-gray-700 dark:text-white/80">
-            <li>Client UI (this portfolio demo is frontend-only); production app adds API layer.</li>
-            <li>Retrieval & context assembly (user profile + job JD + history) feeds LLM tasks.</li>
-            <li>LLM orchestration: routing, re-ranking, and structured outputs for UI components.</li>
-            <li>Safety: prompt guardrails, refusal/repair flows, and logs for evaluation.</li>
+            <li><b>Multi-portal design:</b> Separate flows for Individuals, Employers, and Admins with tailored dashboards.</li>
+            <li><b>Backend services:</b> Node.js + Express API connected to dual MongoDB instances (identity & application data).</li>
+            <li><b>Frontend experience:</b> EJS templating, Bootstrap, and Vanilla JS for fast, interactive CRUD and dashboards.</li>
+            <li><b>AI orchestration:</b> Hybrid pipeline (heuristic filtering → LLM re-ranking) for job recommendations and career assistance.</li>
+            <li><b>Data dashboards:</b> Admin-facing visualizations (ApexCharts + AG Grid) with built-in AI Analyst for equity gap analysis, trend insights, and hallucination-resistant outputs.</li>
+            <li><b>Security & privacy:</b> Role-based access, session management, and user-controlled data visibility.</li>
           </ul>
         </div>
+
+        <!-- Stack -->
         <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 ring-1 ring-gray-200 dark:ring-white/10">
           <h3 class="font-semibold mb-3">Tech Highlights</h3>
           <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 ring-1 ring-gray-200 dark:ring-white/10 mt-6">
