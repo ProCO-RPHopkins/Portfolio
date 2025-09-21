@@ -196,6 +196,23 @@
       <h2 class="text-3xl font-bold mb-10 text-center text-teal-600 dark:text-teal-300">Featured Projects</h2>
       <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
         <!-- project card component -->
+        <!-- Achieve Reentry (rich project card) -->
+        <article class="group bg-white dark:bg-slate-800 rounded-2xl p-6 ring-1 ring-gray-200 dark:ring-white/15 shadow-lg transition-all duration-500 hover:shadow-teal-500/20 dark:hover:shadow-teal-500/30 hover:-translate-y-2">
+          <a href="#achieve-reentry" class="block">
+            <img src="assets/achieve-hero.png" alt="Achieve Reentry – mobile views" class="w-full aspect-video object-cover rounded-xl mb-4 ring-1 ring-gray-200 dark:ring-white/10">
+            <h3 class="text-xl font-semibold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-300 transition">
+              Achieve Reentry — AI Job Search & Support
+            </h3>
+            <p class="text-gray-600 dark:text-white/80 text-sm mb-4">
+              Full-stack platform helping justice-impacted job seekers discover roles, track progress, and generate tailored career docs with LLM assistance.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2 py-1 bg-gray-200 dark:bg-slate-700 text-xs rounded">Vite/Tailwind</span>
+              <span class="px-2 py-1 bg-gray-200 dark:bg-slate-700 text-xs rounded">LLM Orchestration</span>
+              <span class="px-2 py-1 bg-gray-200 dark:bg-slate-700 text-xs rounded">Context Engineering</span>
+            </div>
+          </a>
+        </article>
         <article class="group bg-white dark:bg-slate-800 rounded-2xl p-6 ring-1 ring-gray-200 dark:ring-white/15 shadow-lg transition-all duration-500 hover:shadow-teal-500/20 dark:hover:shadow-teal-500/30 hover:-translate-y-2">
           <div class="bg-gray-200 dark:bg-slate-700 border-2 border-dashed rounded-xl w-full aspect-video mb-4 flex items-center justify-center text-gray-500">
             <i class="ti ti-app-window text-4xl"></i>
@@ -232,6 +249,66 @@
             <span class="px-2 py-1 bg-gray-200 dark:bg-slate-700 text-xs rounded">Data Analysis</span>
           </div>
         </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════  CASE STUDY: ACHIEVE REENTRY  ════════ -->
+  <section id="achieve-reentry" class="py-24">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-6 text-teal-600 dark:text-teal-300">Case Study · Achieve Reentry</h2>
+
+      <!-- Intro / Outcome -->
+      <div class="grid md:grid-cols-3 gap-6 mb-10">
+        <div class="md:col-span-2 bg-white dark:bg-slate-800 rounded-2xl p-6 ring-1 ring-gray-200 dark:ring-white/10">
+          <p class="text-gray-700 dark:text-white/85">
+            A web platform for justice-impacted job seekers: save & track applications, analyze progress, and generate tailored résumés/cover letters with AI assistance.
+          </p>
+          <ul class="mt-4 space-y-2 text-gray-700 dark:text-white/80 text-sm">
+            <li>• Hybrid job recommendation: heuristic pre-filters + LLM re-ranking with rationales.</li>
+            <li>• Instant résumé/cover-letter generation from profile + job description.</li>
+            <li>• Multi-model support (select different LLM providers) with safety guardrails.</li>
+          </ul>
+        </div>
+        <div class="bg-teal-50/60 dark:bg-teal-500/10 rounded-2xl p-6 ring-1 ring-teal-300/40 dark:ring-teal-400/20">
+          <h3 class="font-semibold mb-2">My Role — Context Engineer</h3>
+          <ul class="space-y-2 text-sm text-gray-800 dark:text-white/85">
+            <li>• Designed prompt system & “context packs” for ranking and document generation.</li>
+            <li>• Built guardrails (policy prompts + checks) and safe tool use patterns.</li>
+            <li>• Set up evaluation loops: prompt tests, edge-case suites, and quality criteria.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Screenshots -->
+      <div class="grid md:grid-cols-2 gap-6 mb-10">
+        <img src="assets/achieve-hero.png" class="rounded-xl ring-1 ring-gray-200 dark:ring-white/10" alt="Landing & mobile flows">
+        <img src="assets/achieve-analytics.png" class="rounded-xl ring-1 ring-gray-200 dark:ring-white/10" alt="Analytics & job-tracking">
+      </div>
+
+      <!-- Architecture & Stack -->
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 ring-1 ring-gray-200 dark:ring-white/10">
+          <h3 class="font-semibold mb-3">Architecture (high-level)</h3>
+          <ul class="list-disc pl-5 space-y-2 text-sm text-gray-700 dark:text-white/80">
+            <li>Client UI (this portfolio demo is frontend-only); production app adds API layer.</li>
+            <li>Retrieval & context assembly (user profile + job JD + history) feeds LLM tasks.</li>
+            <li>LLM orchestration: routing, re-ranking, and structured outputs for UI components.</li>
+            <li>Safety: prompt guardrails, refusal/repair flows, and logs for evaluation.</li>
+          </ul>
+        </div>
+        <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 ring-1 ring-gray-200 dark:ring-white/10">
+          <h3 class="font-semibold mb-3">Tech Highlights</h3>
+          <div class="flex flex-wrap gap-2 mb-3">
+            <span class="px-2 py-1 bg-gray-200 dark:bg-slate-700 text-xs rounded">Vite/Tailwind</span>
+            <span class="px-2 py-1 bg-gray-200 dark:bg-slate-700 text-xs rounded">LLM Ranking</span>
+            <span class="px-2 py-1 bg-gray-200 dark:bg-slate-700 text-xs rounded">Prompt/Guardrails</span>
+            <span class="px-2 py-1 bg-gray-200 dark:bg-slate-700 text-xs rounded">Eval Loops</span>
+          </div>
+          <a href="#" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-teal-600/90 hover:bg-teal-600 text-white text-sm ring-1 ring-teal-500">
+            Live demo (coming soon)
+          </a>
+        </div>
       </div>
     </div>
   </section>
