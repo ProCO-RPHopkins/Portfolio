@@ -1,6 +1,6 @@
 # Ryan Hopkins · Portfolio
 
-### 🌐 Live site: [https://proco-rphopkins.github.io/Portfolio/](https://proco-rphopkins.github.io/Portfolio/)
+🌐 Live site: [https://proco-rphopkins.github.io/Portfolio/](https://proco-rphopkins.github.io/Portfolio/)
 
 A modern portfolio built with Vite + TailwindCSS.
 ---
