@@ -330,14 +330,16 @@
       <div class="grid md:grid-cols-2 gap-6 mt-12">
         <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 ring-1 ring-gray-200 dark:ring-white/10">
           <h3 class="font-semibold mb-3">Architecture (high-level)</h3>
-          <ul class="list-disc pl-5 space-y-2 text-sm text-gray-700 dark:text-white/80">
-            <li><b>Multi-portal design:</b> Separate flows for Individuals, Employers, and Admins with tailored dashboards.</li>
-            <li><b>Backend services:</b> Node.js + Express API connected to dual MongoDB instances (identity & application data).</li>
-            <li><b>Frontend experience:</b> EJS templating, Bootstrap, and Vanilla JS for fast, interactive CRUD and dashboards.</li>
-            <li><b>AI orchestration:</b> Hybrid pipeline (heuristic filtering → LLM re-ranking) for job recommendations and career assistance.</li>
-            <li><b>Data dashboards:</b> Admin-facing visualizations (ApexCharts + AG Grid) with built-in AI Analyst for equity gap analysis, trend insights, and hallucination-resistant outputs.</li>
-            <li><b>Security & privacy:</b> Role-based access, session management, and user-controlled data visibility.</li>
-          </ul>
+          <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 ring-1 ring-gray-200 dark:ring-white/10 mt-6">
+            <ul class="list-disc pl-5 space-y-2 text-sm text-gray-700 dark:text-white/80">
+              <li><b>Multi-portal design:</b> Separate flows for Individuals, Employers, and Admins with tailored dashboards.</li>
+              <li><b>Backend services:</b> Node.js + Express API connected to dual MongoDB instances (identity & application data).</li>
+              <li><b>Frontend experience:</b> EJS templating, Bootstrap, and Vanilla JS for fast, interactive CRUD and dashboards.</li>
+              <li><b>AI orchestration:</b> Hybrid pipeline (heuristic filtering → LLM re-ranking) for job recommendations and career assistance.</li>
+              <li><b>Data dashboards:</b> Admin-facing visualizations (ApexCharts + AG Grid) with built-in AI Analyst for equity gap analysis, trend insights, and hallucination-resistant outputs.</li>
+              <li><b>Security & privacy:</b> Role-based access, session management, and user-controlled data visibility.</li>
+            </ul>
+          </div>
         </div>
 
         <!-- Stack -->
@@ -357,10 +359,11 @@
               <li><b>Environment:</b> dotenv</li>
               <li><b>Version Control:</b> Git</li>
             </ul>
-          </div>
-          <a href="#" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-teal-600/90 hover:bg-teal-600 text-white text-sm ring-1 ring-teal-500">
+            <a href="#" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-teal-600/90 hover:bg-teal-600 text-white text-sm ring-1 ring-teal-500 mt-6">
             Live demo (coming soon) 
           </a>
+          </div>
+          
         </div>
       </div>
     </div>
