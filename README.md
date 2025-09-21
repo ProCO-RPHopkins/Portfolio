@@ -25,7 +25,8 @@ npm
 
 1. `cd Portfolio/frontend`
 2. `npm install`
-3. `npm run dev`
+3. `npm run build:css -- --watch &` (Rebuild is necessary with CSS changes)
+4. `npm run dev`
 
 ---
 
