@@ -185,21 +185,17 @@
       <div class="md:w-3/5">
         <h2 class="text-3xl font-bold mb-6 text-teal-600 dark:text-teal-300">About Me</h2>
 
-
         <p class="text-gray-700 dark:text-white/85 leading-relaxed mb-4">
           I’m Ryan Hopkins — an <strong>AI systems engineer & context architect</strong> with an M.S. in Industrial‑Organizational Psychology. I focus on building <strong>reliable LLM features</strong> by pairing clear context patterns with small, testable delivery steps.
         </p>
 
-
         <p class="text-gray-700 dark:text-white/85 leading-relaxed mb-4">
-          I work across the stack with <strong>Node/Express</strong>, <strong>MongoDB</strong>, and EJS + Bootstrap, and I keep model behavior consistent with lightweight evaluation loops. I develop on <strong>WSL2 (Ubuntu)</strong>, containerize with <strong>Docker</strong>, and wire basic <strong>CI checks</strong> around model calls.
+          I work across the stack: <strong>Node/Express</strong> with <strong>MongoDB</strong> and EJS/Bootstrap for server‑rendered apps, and <strong>Next.js + TypeScript</strong> with Tailwind/Framer Motion for newer builds like <em>GameSnap X‑Ray</em>. I develop on <strong>WSL2 (Ubuntu)</strong>, use <strong>Docker</strong> for both hot‑reload dev and multi‑stage production images, and keep LLM features honest with small eval/regression checks plus basic CI gates (lint/format, unit/E2E tests).
         </p>
-
 
         <p class="text-gray-700 dark:text-white/85 leading-relaxed mb-6">
           Recent work includes <strong>Snapshot X‑Ray</strong> (a new app exploring faster spec‑to‑code loops) and <strong>Achieve Reentry</strong> (AI‑assisted job tools). I’m currently exploring <strong>multi‑agent workflows</strong> and <strong>LLM observability</strong>.
         </p>
-
 
         <h3 class="font-semibold mb-2">How I build with LLMs</h3>
         <ol class="list-decimal pl-5 space-y-1 text-sm text-gray-700 dark:text-white/80 mb-6">
@@ -209,7 +205,6 @@
           <li><strong>Ship in slices:</strong> build one step at a time with small evals/fixtures.</li>
           <li><strong>Verify:</strong> keep regression sets, logs, and guardrails; refine prompts/context when tests fail.</li>
         </ol>
-
 
         <!-- Compact skill badges (optional) -->
         <div class="flex flex-wrap gap-2">
@@ -229,7 +224,7 @@
       <h2 class="text-3xl font-bold mb-10 text-center text-teal-600 dark:text-teal-300">Featured Projects</h2>
       <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
         <!-- project card component -->
-        <!-- Achieve Reentry (rich project card) -->
+        <!-- Achieve Reentry -->
         <article class="group bg-white dark:bg-slate-800 rounded-2xl p-6 ring-1 ring-gray-200 dark:ring-white/15 shadow-lg transition-all duration-500 hover:shadow-teal-500/20 dark:hover:shadow-teal-500/30 hover:-translate-y-2">
           <a href="#achieve-reentry" class="block">
             <img
@@ -270,6 +265,51 @@
               <span class="px-2 py-1 bg-gray-200 dark:bg-slate-700 text-xs rounded">ApexCharts</span>
               <span class="px-2 py-1 bg-gray-200 dark:bg-slate-700 text-xs rounded">AG Grid</span>
               <span class="px-2 py-1 bg-gray-200 dark:bg-slate-700 text-xs rounded">LLM APIs</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- GameSnap X-Ray -->
+        <article class="group bg-white dark:bg-slate-800 rounded-2xl p-6 ring-1 ring-gray-200 dark:ring-white/15 shadow-lg transition-all duration-500 hover:shadow-teal-500/20 dark:hover:shadow-teal-500/30 hover:-translate-y-2">
+          <a href="#gamesnap-xray" class="block">
+            <img
+              src="assets/gamesnap-hero.png"
+              alt="GameSnap X-Ray — upload to poster preview"
+              class="w-full aspect-[16/9] object-contain rounded-xl mb-4 ring-1 ring-gray-200 dark:ring-white/10 bg-gray-50 dark:bg-slate-800"
+              loading="lazy"
+            />
+            <h3 class="text-xl font-semibold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-300 transition">
+              GameSnap X-Ray — One Image → Instant Sports Context
+            </h3>
+            <p class="text-gray-600 dark:text-white/80 text-sm mb-4">
+              Next.js app that turns a single game screenshot into instant sports context and a share-ready poster—detects the scorebug, identifies the game, and renders clean templates; includes upload API, demo gallery, and Dockerized builds.
+            </p>
+
+            <!-- Buttons -->
+            <div class="flex flex-wrap gap-3">
+              <a href="https://github.com/ProCO-RPHopkins/gamesnap-xray"
+                target="_blank"
+                class="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-gradient-to-r from-teal-600 to-cyan-600 text-white text-xs font-semibold shadow-md hover:scale-105 transition ring-1 ring-teal-500">
+                <i class="ti ti-rocket"></i>
+                Open Source
+              </a>
+              <a href="#"
+                target="_blank"
+                class="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-gradient-to-r from-purple-600 to-pink-600 text-white text-xs font-semibold shadow-md hover:scale-105 transition ring-1 ring-purple-500">
+                <i class="ti ti-headphones"></i>
+                Play Podcast
+              </a>
+            </div>
+
+            <!-- Tech Stack Chips -->
+            <div class="flex flex-wrap gap-2 mt-4">
+              <span class="px-2 py-1 bg-gray-200 dark:bg-slate-700 text-xs rounded">Next.js</span>
+              <span class="px-2 py-1 bg-gray-200 dark:bg-slate-700 text-xs rounded">TypeScript</span>
+              <span class="px-2 py-1 bg-gray-200 dark:bg-slate-700 text-xs rounded">Tailwind</span>
+              <span class="px-2 py-1 bg-gray-200 dark:bg-slate-700 text-xs rounded">Framer Motion</span>
+              <span class="px-2 py-1 bg-gray-200 dark:bg-slate-700 text-xs rounded">Route Handlers (Node)</span>
+              <span class="px-2 py-1 bg-gray-200 dark:bg-slate-700 text-xs rounded">Docker</span>
+              <span class="px-2 py-1 bg-gray-200 dark:bg-slate-700 text-xs rounded">Demo Gallery API</span>
             </div>
           </a>
         </article>
@@ -412,33 +452,7 @@
             <span class="px-2 py-1 bg-gray-200 dark:bg-slate-700 text-xs rounded">C#</span>
             <span class="px-2 py-1 bg-gray-200 dark:bg-slate-700 text-xs rounded">AI Agents</span>
           </div>
-        </article>
-        <article class="group bg-white dark:bg-slate-800 rounded-2xl p-6 ring-1 ring-gray-200 dark:ring-white/15 shadow-lg transition-all duration-500 hover:shadow-teal-500/20 dark:hover:shadow-teal-500/30 hover:-translate-y-2">
-          <div class="bg-gray-200 dark:bg-slate-700 border-2 border-dashed rounded-xl w-full aspect-video mb-4 flex items-center justify-center text-gray-500">
-            <i class="ti ti-robot text-4xl"></i>
-          </div>
-          <h3 class="text-xl font-semibold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-300 transition">SkillSprint Coach</h3>
-          <p class="text-gray-600 dark:text-white/80 text-sm mb-4">Custom GPT for micro‑learning sprint planning.</p>
-          <div class="flex flex-wrap gap-2">
-            <span class="px-2 py-1 bg-gray-200 dark:bg-slate-700 text-xs rounded">OpenAI API</span>
-            <span class="px-2 py-1 bg-gray-200 dark:bg-slate-700 text-xs rounded">Python</span>
-            <span class="px-2 py-1 bg-gray-200 dark:bg-slate-700 text-xs rounded">LLM Fine-tuning</span>
-          </div>
-        </article>
-        <article class="group bg-white dark:bg-slate-800 rounded-2xl p-6 ring-1 ring-gray-200 dark:ring-white/15 shadow-lg transition-all duration-500 hover:shadow-teal-500/20 dark:hover:shadow-teal-500/30 hover:-translate-y-2">
-          <div class="bg-gray-200 dark:bg-slate-700 border-2 border-dashed rounded-xl w-full aspect-video mb-4 flex items-center justify-center text-gray-500">
-            <i class="ti ti-code text-4xl"></i>
-          </div>
-          <h3 class="text-xl font-semibold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-300 transition">AI‑Assisted Thematic Analyzer</h3>
-          <p class="text-gray-600 dark:text-white/80 text-sm mb-4">Six‑step, code‑assisted qualitative research workflow.</p>
-          <div class="flex flex-wrap gap-2">
-            <span class="px-2 py-1 bg-gray-200 dark:bg-slate-700 text-xs rounded">NLP</span>
-            <span class="px-2 py-1 bg-gray-200 dark:bg-slate-700 text-xs rounded">Python</span>
-            <span class="px-2 py-1 bg-gray-200 dark:bg-slate-700 text-xs rounded">Data Analysis</span>
-          </div>
-        </article>
-      </div>
-    </div>
+        </article>        
   </section>
 
   <!-- ════════  CASE STUDY: ACHIEVE REENTRY  ════════ -->
