@@ -180,44 +180,37 @@
   <!-- ════════  ABOUT  ════════ -->
   <section id="about" class="max-w-6xl mx-auto px-6 py-24">
     <div class="flex flex-col md:flex-row gap-8 items-start">
-      <div class="md:w-1/3">
-        <img src="assets/about.jpg" alt="Ryan Hopkins portrait" class="w-full aspect-square object-cover rounded-xl shadow-lg" />
+      <!-- Image (lowered slightly on desktop for cleaner alignment) -->
+      <div class="md:w-1/3 md:mt-16">
+        <img src="assets/about.jpg" alt="Ryan Hopkins portrait"
+            class="w-full aspect-square object-cover rounded-xl shadow-lg ring-1 ring-gray-200 dark:ring-white/10" />
       </div>
+
+      <!-- Content -->
       <div class="md:w-3/5">
         <h2 class="text-3xl font-bold mb-6 text-teal-600 dark:text-teal-300">About Me</h2>
 
         <p class="text-gray-700 dark:text-white/85 leading-relaxed mb-4">
-          I’m Ryan Hopkins — an <strong>AI systems engineer & context architect</strong> with an M.S. in Industrial‑Organizational Psychology. I focus on building <strong>reliable LLM features</strong> by pairing clear context patterns with small, testable delivery steps.
+          I’m Ryan Hopkins — an <strong>AI systems engineer & context architect</strong>. I design reliable LLM workflows and ship
+          full-stack + edge/offline systems, turning ambiguous specs into small, testable steps with clear checks.
         </p>
 
         <p class="text-gray-700 dark:text-white/85 leading-relaxed mb-4">
-          I work across the stack: <strong>Node/Express</strong> with <strong>MongoDB</strong> and EJS/Bootstrap for server‑rendered apps, and <strong>Next.js + TypeScript</strong> with Tailwind/Framer Motion for newer builds like <em>GameSnap X‑Ray</em>. I develop on <strong>WSL2 (Ubuntu)</strong>, use <strong>Docker</strong> for both hot‑reload dev and multi‑stage production images, and keep LLM features honest with small eval/regression checks plus basic CI gates (lint/format, unit/E2E tests).
+          I build with <strong>Node/Express</strong>, <strong>MongoDB</strong>, and EJS/Bootstrap, and newer stacks in
+          <strong>Next.js + TypeScript</strong> with Tailwind/Framer. I develop on <strong>WSL2 (Ubuntu)</strong>, containerize with
+          <strong>Docker</strong>, and wire CI gates (lint/format, unit/E2E) into <strong>GitHub Actions</strong>.
         </p>
 
-        <p class="text-gray-700 dark:text-white/85 leading-relaxed mb-6">
-          Recent work includes <strong>Snapshot X‑Ray</strong> (a new app exploring faster spec‑to‑code loops) and <strong>Achieve Reentry</strong> (AI‑assisted job tools). I’m currently exploring <strong>multi‑agent workflows</strong> and <strong>LLM observability</strong>.
+        <p class="text-gray-700 dark:text-white/85 leading-relaxed">
+          On devices, my Raspberry Pi offline-learning work sharpened my <strong>edge/offline</strong> toolkit:
+          <strong>Kolibri</strong> & <strong>Kiwix (ZIM)</strong> content packaging, multi-stage Docker and
+          <strong>Packer/HCL</strong> imaging, artifact vs <strong>GitHub Releases</strong> versioning, and size-aware pipelines.
+          I orchestrate <strong>ChatGPT</strong> (Senior Engineer/PM) with a Debugger LLM in a cross-model loop and use
+          succinct handoff prompts to maintain continuity across sessions.
         </p>
-
-        <h3 class="font-semibold mb-2">How I build with LLMs</h3>
-        <ol class="list-decimal pl-5 space-y-1 text-sm text-gray-700 dark:text-white/80 mb-6">
-          <li><strong>Discuss & design:</strong> iterate on ideas; write a clear problem statement and solution outline.</li>
-          <li><strong>Roadmap:</strong> segment features into phases and “next steps.”</li>
-          <li><strong>Protocols:</strong> define instruction schemas, stop‑points for questions, and testable deliverables for each step.</li>
-          <li><strong>Ship in slices:</strong> build one step at a time with small evals/fixtures.</li>
-          <li><strong>Verify:</strong> keep regression sets, logs, and guardrails; refine prompts/context when tests fail.</li>
-        </ol>
-
-        <!-- Compact skill badges (optional) -->
-        <div class="flex flex-wrap gap-2">
-          <span class="px-2 py-1 bg-gray-200 dark:bg-slate-700 text-xs rounded">Prompt/Context Patterns</span>
-          <span class="px-2 py-1 bg-gray-200 dark:bg-slate-700 text-xs rounded">Instruction Protocols</span>
-          <span class="px-2 py-1 bg-gray-200 dark:bg-slate-700 text-xs rounded">Evaluation & QA</span>
-          <span class="px-2 py-1 bg-gray-200 dark:bg-slate-700 text-xs rounded">Phased Delivery</span>
-          <span class="px-2 py-1 bg-gray-200 dark:bg-slate-700 text-xs rounded">Docs & Runbooks</span>
-        </div>
       </div>
     </div>
-  </section>
+</section>
 
   <!-- ════════  HOW I USE LLMS (PROCESS)  ════════ -->
   <section id="process" class="py-24 bg-gray-100 dark:bg-slate-900/50">
