@@ -632,159 +632,134 @@
 
   <!-- ════════  CASE STUDY: ACHIEVE REENTRY  ════════ -->
   <section id="achieve-reentry" class="py-24">
-    <div class="max-w-5xl mx-auto px-6 flex items-center justify-between mb-6">
+  <div class="max-w-5xl mx-auto px-6">
+    <div class="flex items-center justify-between mb-6">
       <h2 class="text-3xl font-bold text-teal-600 dark:text-teal-300">
         Case Study · Achieve Reentry
       </h2>
       <a href="https://drive.google.com/file/d/1T0vriv51OrSNy37oIJDMQL4UFP6XesZu/view?usp=sharing"
-        target="_blank"
-        class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-teal-600 to-cyan-600 text-white text-sm font-semibold shadow-md hover:scale-105 transition ring-1 ring-teal-500">
+         target="_blank"
+         class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-teal-600 to-cyan-600 text-white text-sm font-semibold shadow-md hover:scale-105 transition ring-1 ring-teal-500">
         <i class="ti ti-headphones text-lg"></i>
         Play Podcast
       </a>
-    </div>
-      <!-- Intro / Outcome -->
-      <div class="grid md:grid-cols-3 gap-6 mb-10">
-        <!-- Intro summary -->
-        <div class="md:col-span-2 bg-white dark:bg-slate-800 rounded-2xl p-6 ring-1 ring-gray-200 dark:ring-white/10">
-          <h3 class="font-semibold mb-2">Intro Summary</h3>
-          <p class="text-gray-700 dark:text-white/85">
-            A web platform for justice-impacted job seekers: save & track applications, analyze progress, and generate tailored résumés/cover letters with AI assistance.
-          </p>
-          <ul class="mt-4 space-y-2 text-gray-700 dark:text-white/80 text-sm">
-            <li>• Hybrid job recommendation: heuristic pre-filters + LLM re-ranking with rationales.</li>
-            <li>• Instant résumé/cover-letter generation from profile + job description.</li>
-            <li>• Multi-model support (select different LLM providers) with safety guardrails.</li>
-          </ul>
-        </div>
-
-        <!-- My Role — Context Engineer -->
-        <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 ring-1 ring-gray-200 dark:ring-white/10">
-          <h3 class="font-semibold mb-2">My Role — Context Engineer</h3>
-          <ul class="space-y-2 text-sm text-gray-700 dark:text-white/80">
-            <li>• Designed prompt system & “context packs” for ranking and document generation.</li>
-            <li>• Built guardrails (policy prompts + checks) and safe tool use patterns.</li>
-            <li>• Set up evaluation loops: prompt tests, edge-case suites, and quality criteria.</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Screenshots -->
-      <div class="grid md:grid-cols-2 gap-6 mb-10">
-        <img src="assets/achieve-hero.png"
-            alt="Landing & mobile flows"
-            class="rounded-xl ring-1 ring-gray-200 dark:ring-white/10
-                  bg-white/5
-                  shadow-md hover:shadow-2xl hover:shadow-teal-500/30
-                  transition-all duration-300 hover:scale-105"
-            loading="lazy" />
-        <img src="assets/achieve-analytics.png"
-            alt="Analytics & job-tracking"
-            class="rounded-xl ring-1 ring-gray-200 dark:ring-white/10
-                  bg-white/5
-                  shadow-md hover:shadow-2xl hover:shadow-teal-500/30
-                  transition-all duration-300 hover:scale-105"
-            loading="lazy" />
-      </div>
-
-
-      <!-- Analytics & AI Analyst -->
-      <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 ring-1 ring-gray-200 dark:ring-white/10 mt-10">
-        <h3 class="font-semibold text-xl mb-4">Super Admin Data Dashboard & AI Analyst</h3>
-        <p class="text-gray-700 dark:text-white/85 mb-4">
-          The admin suite captures novel quantitative signals across the job-search journey, provides interactive visualizations,
-          and includes an <b>AI Analyst</b> that answers questions about the data using a guarded pipeline to minimize hallucinations—
-          showing the generated aggregation pipeline and range so admins can verify results.
-        </p>
-
-        <ul class="list-disc pl-5 space-y-2 text-sm text-gray-700 dark:text-white/80 mb-6">
-          <li>Filters by race/ethnicity, gender, conviction type; equity-gap and opportunity heatmaps.</li>
-          <li>Application analytics: totals, active pipeline, interviews, offers, rescinds; time-series trends.</li>
-          <li>AI Analyst: prompt templates + schema-aware context; pipeline preview + range disclosure for transparency.</li>
-        </ul>
-
-        <div class="grid gap-6 md:grid-cols-3 justify-items-center">
-          <img src="assets/ai-analyst.png"
-              alt="AI Analyst – verified pipeline & range"
-              class="w-[260px] md:w-[300px] lg:w-[340px] h-auto object-contain
-                      rounded-xl ring-1 ring-gray-200 dark:ring-white/10 bg-gray-50 dark:bg-slate-900
-                      shadow-md hover:shadow-xl hover:shadow-teal-500/30
-                      transition-all duration-300 hover:scale-105"
-              loading="lazy" />
-          <img src="assets/data-dashboard.png"
-              alt="Admin dashboard – KPIs and equity analysis"
-              class="w-[260px] md:w-[300px] lg:w-[340px] h-auto object-contain
-                      rounded-xl ring-1 ring-gray-200 dark:ring-white/10 bg-gray-50 dark:bg-slate-900
-                      shadow-md hover:shadow-xl hover:shadow-teal-500/30
-                      transition-all duration-300 hover:scale-105"
-              loading="lazy" />
-          <img src="assets/user-data.png"
-              alt="User summary table – outcomes and demographics"
-              class="w-[260px] md:w-[300px] lg:w-[340px] h-auto object-contain
-                      rounded-xl ring-1 ring-gray-200 dark:ring-white/10 bg-gray-50 dark:bg-slate-900
-                      shadow-md hover:shadow-xl hover:shadow-teal-500/30
-                      transition-all duration-300 hover:scale-105"
-              loading="lazy" />
-        </div>
-      </div>
-      
-      <!-- Architecture -->
-      <div class="grid md:grid-cols-2 gap-6 mt-12">
-        <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 ring-1 ring-gray-200 dark:ring-white/10">
-          <h3 class="font-semibold mb-3">Architecture (high-level)</h3>
-          <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 ring-1 ring-gray-200 dark:ring-white/10 mt-6">
-            <ul class="list-disc pl-5 space-y-2 text-sm text-gray-700 dark:text-white/80">
-              <li><b>Multi-portal design:</b> Separate flows for Individuals, Employers, and Admins with tailored dashboards.</li>
-              <li><b>Backend services:</b> Node.js + Express API connected to dual MongoDB instances (identity & application data).</li>
-              <li><b>Frontend experience:</b> EJS templating, Bootstrap, and Vanilla JS for fast, interactive CRUD and dashboards.</li>
-              <li><b>AI orchestration:</b> Hybrid pipeline (heuristic filtering → LLM re-ranking) for job recommendations and career assistance.</li>
-              <li><b>Data dashboards:</b> Admin-facing visualizations (ApexCharts + AG Grid) with built-in AI Analyst for equity gap analysis, trend insights, and hallucination-resistant outputs.</li>
-              <li><b>Security & privacy:</b> Role-based access, session management, and user-controlled data visibility.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Stack -->
-        <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 ring-1 ring-gray-200 dark:ring-white/10">
-          <h3 class="font-semibold mb-3">Tech Highlights</h3>
-          <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 ring-1 ring-gray-200 dark:ring-white/10 mt-6">
-            <h3 class="font-semibold mb-3">Technology Stack</h3>
-            <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700 dark:text-white/80">
-              <li><b>Server:</b> Node.js, Express.js</li>
-              <li><b>Database:</b> Dual MongoDB instances (Identity/Profile DB + App DB)</li>
-              <li><b>Templating:</b> EJS with <code>ejs-mate</code> layouts</li>
-              <li><b>Styling:</b> Bootstrap 5 (npm), custom CSS</li>
-              <li><b>Frontend JS:</b> Vanilla JS + page-specific helpers</li>
-              <li><b>AI Integration:</b> <code>@google/generative-ai</code>, <code>axios</code> (OpenRouter)</li>
-              <li><b>Key Libraries:</b> bcryptjs, express-session + connect-mongo, multer, nodemailer, connect-flash, method-override, FullCalendar, Choices.js, axios he</li>
-              <li><b>Data Visualization:</b> ApexCharts, AG Grid</li>
-              <li><b>Environment:</b> dotenv</li>
-              <li><b>Version Control:</b> Git</li>
-            </ul>
-            <a href="#" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-teal-600/90 hover:bg-teal-600 text-white text-sm ring-1 ring-teal-500 mt-6">
-            Live demo (coming soon) 
-          </a>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ════════  CASE STUDY: RASPBERRY PI OFFLINE LEARNING  ════════ -->
-  <section id="raspberry-pi-offline" class="py-24">
-    <div class="max-w-5xl mx-auto px-6 flex items-center justify-between mb-6">
-      <h2 class="text-3xl font-bold text-teal-600 dark:text-teal-300">
-        Case Study · Raspberry Pi Offline Learning
-      </h2>
-      <!-- Optional icon (replace file when available) -->
-      <img src="assets/raspberry-pi-icon.png" alt="Raspberry Pi"
-          class="w-26 h-26 rounded-lg ring-1 ring-gray-200 dark:ring-white/10 bg-white/30 dark:bg-white/5 p-1 hidden sm:block" />
     </div>
 
     <!-- Intro / Outcome -->
     <div class="grid md:grid-cols-3 gap-6 mb-10">
       <!-- Intro summary -->
+      <div class="md:col-span-2 bg-white dark:bg-slate-800 rounded-2xl p-6 ring-1 ring-gray-200 dark:ring-white/10">
+        <h3 class="font-semibold mb-2">Intro Summary</h3>
+        <p class="text-gray-700 dark:text-white/85">
+          A web platform for justice-impacted job seekers: save & track applications, analyze progress, and generate tailored résumés/cover letters with AI assistance.
+        </p>
+        <ul class="mt-4 space-y-2 text-gray-700 dark:text-white/80 text-sm">
+          <li>• Hybrid job recommendation: heuristic pre-filters + LLM re-ranking with rationales.</li>
+          <li>• Instant résumé/cover-letter generation from profile + job description.</li>
+          <li>• Multi-model support (select different LLM providers) with safety guardrails.</li>
+        </ul>
+      </div>
+
+      <!-- My Role — Context Engineer -->
+      <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 ring-1 ring-gray-200 dark:ring-white/10">
+        <h3 class="font-semibold mb-2">My Role — Context Engineer</h3>
+        <ul class="space-y-2 text-sm text-gray-700 dark:text-white/80">
+          <li>• Designed prompt system & “context packs” for ranking and document generation.</li>
+          <li>• Built guardrails (policy prompts + checks) and safe tool use patterns.</li>
+          <li>• Set up evaluation loops: prompt tests, edge-case suites, and quality criteria.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Screenshots -->
+    <div class="grid md:grid-cols-2 gap-6 mb-10">
+      <img src="assets/achieve-hero.png" alt="Landing & mobile flows"
+           class="rounded-xl ring-1 ring-gray-200 dark:ring-white/10 bg-white/5 shadow-md hover:shadow-2xl hover:shadow-teal-500/30 transition-all duration-300 hover:scale-105" loading="lazy" />
+      <img src="assets/achieve-analytics.png" alt="Analytics & job-tracking"
+           class="rounded-xl ring-1 ring-gray-200 dark:ring-white/10 bg-white/5 shadow-md hover:shadow-2xl hover:shadow-teal-500/30 transition-all duration-300 hover:scale-105" loading="lazy" />
+    </div>
+
+    <!-- Analytics & AI Analyst -->
+    <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 ring-1 ring-gray-200 dark:ring-white/10 mt-10">
+      <h3 class="font-semibold text-xl mb-4">Super Admin Data Dashboard & AI Analyst</h3>
+      <p class="text-gray-700 dark:text-white/85 mb-4">
+        The admin suite captures novel quantitative signals across the job-search journey, provides interactive visualizations,
+        and includes an <b>AI Analyst</b> that answers questions about the data using a guarded pipeline to minimize hallucinations—
+        showing the generated aggregation pipeline and range so admins can verify results.
+      </p>
+      <ul class="list-disc pl-5 space-y-2 text-sm text-gray-700 dark:text-white/80 mb-6">
+        <li>Filters by race/ethnicity, gender, conviction type; equity-gap and opportunity heatmaps.</li>
+        <li>Application analytics: totals, active pipeline, interviews, offers, rescinds; time-series trends.</li>
+        <li>AI Analyst: prompt templates + schema-aware context; pipeline preview + range disclosure for transparency.</li>
+      </ul>
+
+      <div class="grid gap-6 md:grid-cols-3 justify-items-center">
+        <img src="assets/ai-analyst.png" alt="AI Analyst – verified pipeline & range"
+             class="w-[260px] md:w-[300px] lg:w-[340px] h-auto object-contain rounded-xl ring-1 ring-gray-200 dark:ring-white/10 bg-gray-50 dark:bg-slate-900 shadow-md hover:shadow-xl hover:shadow-teal-500/30 transition-all duration-300 hover:scale-105" loading="lazy" />
+        <img src="assets/data-dashboard.png" alt="Admin dashboard – KPIs and equity analysis"
+             class="w-[260px] md:w-[300px] lg:w-[340px] h-auto object-contain rounded-xl ring-1 ring-gray-200 dark:ring-white/10 bg-gray-50 dark:bg-slate-900 shadow-md hover:shadow-xl hover:shadow-teal-500/30 transition-all duration-300 hover:scale-105" loading="lazy" />
+        <img src="assets/user-data.png" alt="User summary table – outcomes and demographics"
+             class="w-[260px] md:w-[300px] lg:w-[340px] h-auto object-contain rounded-xl ring-1 ring-gray-200 dark:ring-white/10 bg-gray-50 dark:bg-slate-900 shadow-md hover:shadow-xl hover:shadow-teal-500/30 transition-all duration-300 hover:scale-105" loading="lazy" />
+      </div>
+    </div>
+
+    <!-- Architecture -->
+    <div class="grid md:grid-cols-2 gap-6 mt-12">
+      <!-- High-level -->
+      <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 ring-1 ring-gray-200 dark:ring-white/10">
+        <h3 class="font-semibold mb-3">Architecture (high-level)</h3>
+        <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 ring-1 ring-gray-200 dark:ring-white/10 mt-6">
+          <ul class="list-disc pl-5 space-y-2 text-sm text-gray-700 dark:text-white/80">
+            <li><b>Multi-portal design:</b> Separate flows for Individuals, Employers, and Admins with tailored dashboards.</li>
+            <li><b>Backend services:</b> Node.js + Express API connected to dual MongoDB instances (identity & application data).</li>
+            <li><b>Frontend experience:</b> EJS templating, Bootstrap, and Vanilla JS for fast, interactive CRUD and dashboards.</li>
+            <li><b>AI orchestration:</b> Hybrid pipeline (heuristic filtering → LLM re-ranking) for job recommendations and career assistance.</li>
+            <li><b>Data dashboards:</b> Admin-facing visualizations (ApexCharts + AG Grid) with built-in AI Analyst for equity gap analysis, trend insights, and hallucination-resistant outputs.</li>
+            <li><b>Security & privacy:</b> Role-based access, session management, and user-controlled data visibility.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Tech Highlights -->
+      <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 ring-1 ring-gray-200 dark:ring-white/10">
+        <h3 class="font-semibold mb-3">Tech Highlights</h3>
+        <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 ring-1 ring-gray-200 dark:ring-white/10 mt-6">
+          <h3 class="font-semibold mb-3">Technology Stack</h3>
+          <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700 dark:text-white/80">
+            <li><b>Server:</b> Node.js, Express.js</li>
+            <li><b>Database:</b> Dual MongoDB instances (Identity/Profile DB + App DB)</li>
+            <li><b>Templating:</b> EJS with <code>ejs-mate</code> layouts</li>
+            <li><b>Styling:</b> Bootstrap 5 (npm), custom CSS</li>
+            <li><b>Frontend JS:</b> Vanilla JS + page-specific helpers</li>
+            <li><b>AI Integration:</b> <code>@google/generative-ai</code>, <code>axios</code> (OpenRouter)</li>
+            <li><b>Key Libraries:</b> bcryptjs, express-session + connect-mongo, multer, nodemailer, connect-flash, method-override, FullCalendar, Choices.js, axios he</li>
+            <li><b>Data Visualization:</b> ApexCharts, AG Grid</li>
+            <li><b>Environment:</b> dotenv</li>
+            <li><b>Version Control:</b> Git</li>
+          </ul>
+          <a href="#" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-teal-600/90 hover:bg-teal-600 text-white text-sm ring-1 ring-teal-500 mt-6">
+            Live demo (coming soon)
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- ════════  CASE STUDY: RASPBERRY PI OFFLINE LEARNING  ════════ -->
+  <section id="raspberry-pi-offline" class="py-24">
+  <div class="max-w-5xl mx-auto px-6">
+    <div class="flex items-center justify-between mb-6">
+      <h2 class="text-3xl font-bold text-teal-600 dark:text-teal-300">
+        Case Study · Raspberry Pi Offline Learning
+      </h2>
+      <img src="assets/raspberry-pi-icon.png" alt="Raspberry Pi"
+           class="w-14 h-14 rounded-lg ring-1 ring-gray-200 dark:ring-white/10 bg-white/30 dark:bg-white/5 p-1 hidden sm:block" />
+    </div>
+
+    <!-- Intro / Outcome -->
+    <div class="grid md:grid-cols-3 gap-6 mb-10">
       <div class="md:col-span-2 bg-white dark:bg-slate-800 rounded-2xl p-6 ring-1 ring-gray-200 dark:ring-white/10">
         <h3 class="font-semibold mb-2">Intro Summary</h3>
         <p class="text-gray-700 dark:text-white/85">
@@ -798,7 +773,6 @@
         </ul>
       </div>
 
-      <!-- My Role — Context Engineer -->
       <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 ring-1 ring-gray-200 dark:ring-white/10">
         <h3 class="font-semibold mb-2">My Role — Context Engineer</h3>
         <ul class="space-y-2 text-sm text-gray-700 dark:text-white/80">
@@ -809,23 +783,17 @@
       </div>
     </div>
 
-    <!-- Visuals area (placeholders until you add images) -->
+    <!-- Visuals -->
     <div class="grid md:grid-cols-2 gap-6 mb-10">
-      <div class="rounded-xl ring-1 ring-gray-200 dark:ring-white/10 bg-white/5
-                  shadow-md hover:shadow-2xl hover:shadow-teal-500/30
-                  transition-all duration-300 flex items-center justify-center h-64">
+      <div class="rounded-xl ring-1 ring-gray-200 dark:ring-white/10 bg-white/5 shadow-md hover:shadow-2xl hover:shadow-teal-500/30 transition-all duration-300 flex items-center justify-center h-64">
         <div class="text-center text-sm text-gray-600 dark:text-white/70">
-          <img src="assets/raspberry-pi-icon.png" alt="Raspberry Pi"
-              class="w-50 h-50 mx-auto mb-3 opacity-80" />
+          <img src="assets/raspberry-pi-icon.png" alt="Raspberry Pi" class="w-20 h-20 mx-auto mb-3 opacity-80" />
           <p>Device + Classroom Topology</p>
         </div>
       </div>
-      <div class="rounded-xl ring-1 ring-gray-200 dark:ring-white/10 bg-white/5
-                  shadow-md hover:shadow-2xl hover:shadow-teal-500/30
-                  transition-all duration-300 flex items-center justify-center h-64">
+      <div class="rounded-xl ring-1 ring-gray-200 dark:ring-white/10 bg-white/5 shadow-md hover:shadow-2xl hover:shadow-teal-500/30 transition-all duration-300 flex items-center justify-center h-64">
         <div class="text-center text-sm text-gray-600 dark:text-white/70">
-          <img src="assets/raspberry-pi-icon.png" alt="Raspberry Pi"
-              class="w-50 h-50 mx-auto mb-3 opacity-80" />
+          <img src="assets/raspberry-pi-icon.png" alt="Raspberry Pi" class="w-20 h-20 mx-auto mb-3 opacity-80" />
           <p>Content Flow: ZIM → Kiwix → Local Wi-Fi</p>
         </div>
       </div>
@@ -844,28 +812,28 @@
         <li><b>Modular updates:</b> swap or add ZIMs/channels; keep the base system stable.</li>
         <li><b>Size strategy:</b> separate “test artifacts” from “release images”; avoid bloating the build pipeline (160GB+ datasets kept external to CI build steps).</li>
       </ul>
+
       <div class="grid md:grid-cols-3 gap-4 text-xs text-gray-700 dark:text-white/80">
         <div class="p-4 rounded-xl ring-1 ring-gray-200 dark:ring-white/10 bg-white/5">
           <b>Content QA</b>
           <pre class="mt-2 whitespace-pre-wrap text-[11px] leading-4">kiwix-serve --port=8099 ./zim/test.zim
-  # open http://localhost:8099 for quick checks</pre>
+# open http://localhost:8099 for quick checks</pre>
         </div>
         <div class="p-4 rounded-xl ring-1 ring-gray-200 dark:ring-white/10 bg-white/5">
           <b>Kolibri Import</b>
           <pre class="mt-2 whitespace-pre-wrap text-[11px] leading-4"># via UI or CLI (kolibri manage importchannel)
-  # test content & progress tracking fully offline</pre>
+# test content & progress tracking fully offline</pre>
         </div>
         <div class="p-4 rounded-xl ring-1 ring-gray-200 dark:ring-white/10 bg-white/5">
           <b>Release Hygiene</b>
           <pre class="mt-2 whitespace-pre-wrap text-[11px] leading-4"># artifacts for temporary QA
-  # GitHub Releases for versioned images + notes</pre>
+# GitHub Releases for versioned images + notes</pre>
         </div>
       </div>
     </div>
 
     <!-- Architecture -->
     <div class="grid md:grid-cols-2 gap-6 mt-12">
-      <!-- High-level Architecture -->
       <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 ring-1 ring-gray-200 dark:ring-white/10">
         <h3 class="font-semibold mb-3">Architecture (high-level)</h3>
         <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 ring-1 ring-gray-200 dark:ring-white/10 mt-6">
@@ -879,7 +847,6 @@
         </div>
       </div>
 
-      <!-- Tech Highlights -->
       <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 ring-1 ring-gray-200 dark:ring-white/10">
         <h3 class="font-semibold mb-3">Tech Highlights</h3>
         <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 ring-1 ring-gray-200 dark:ring-white/10 mt-6">
@@ -895,16 +862,14 @@
             <li><b>Releases:</b> GitHub Releases (versioned images, changelogs)</li>
             <li><b>LLM workflow:</b> ChatGPT (Senior Engineer/PM) + Debugger LLM (cross-model loop)</li>
           </ul>
-
-          <!-- Optional CTA (keep consistent style; add real link later) -->
-          <a href="#"
-            class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-teal-600/90 hover:bg-teal-600 text-white text-sm ring-1 ring-teal-500 mt-6">
+          <a href="#" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-teal-600/90 hover:bg-teal-600 text-white text-sm ring-1 ring-teal-500 mt-6">
             Release notes (coming soon)
           </a>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- ════════  CASE STUDY: CAPSTONE  ════════ -->
   <section id="capstone-io" class="py-24">
